@@ -16,5 +16,25 @@ namespace proyecto_mundial
         {
             InitializeComponent();
         }
+
+        private void add_team_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void add_player_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void add_couch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_game_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

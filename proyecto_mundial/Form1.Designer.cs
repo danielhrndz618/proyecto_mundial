@@ -115,6 +115,7 @@
             this.add_team.TabIndex = 1;
             this.add_team.Text = "Agregar Equipo";
             this.add_team.UseVisualStyleBackColor = false;
+            this.add_team.Click += new System.EventHandler(this.add_team_Click);
             // 
             // add_player
             // 
@@ -134,6 +135,7 @@
             this.add_player.TabIndex = 2;
             this.add_player.Text = "Agregar Jugador";
             this.add_player.UseVisualStyleBackColor = false;
+            this.add_player.Click += new System.EventHandler(this.add_player_Click);
             // 
             // add_couch
             // 
@@ -153,6 +155,7 @@
             this.add_couch.TabIndex = 3;
             this.add_couch.Text = "Agregar Entrenador";
             this.add_couch.UseVisualStyleBackColor = false;
+            this.add_couch.Click += new System.EventHandler(this.add_couch_Click);
             // 
             // btn_game
             // 
@@ -172,6 +175,7 @@
             this.btn_game.TabIndex = 4;
             this.btn_game.Text = "Jugar Partido";
             this.btn_game.UseVisualStyleBackColor = false;
+            this.btn_game.Click += new System.EventHandler(this.btn_game_Click);
             // 
             // pictureBox1
             // 
