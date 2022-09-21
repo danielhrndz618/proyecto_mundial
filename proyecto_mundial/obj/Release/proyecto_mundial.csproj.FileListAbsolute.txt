@@ -1,0 +1,11 @@
+C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\bin\Release\proyecto_mundial.exe.config
+C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\bin\Release\proyecto_mundial.exe
+C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\bin\Release\proyecto_mundial.pdb
+C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.csproj.AssemblyReference.cache
+C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.csproj.SuggestedBindingRedirects.cache
+C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.Form1.resources
+C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.Properties.Resources.resources
+C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.csproj.GenerateResource.cache
+C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.csproj.CoreCompileInputs.cache
+C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.exe
+C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.pdb
