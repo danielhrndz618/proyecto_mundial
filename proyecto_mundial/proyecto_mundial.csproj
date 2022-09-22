@@ -122,5 +122,14 @@
   <ItemGroup>
     <None Include="img\mascota.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="img\close_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\maxi_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\minimize_32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

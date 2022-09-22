@@ -63,6 +63,16 @@ namespace proyecto_mundial.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close_32 {
+            get {
+                object obj = ResourceManager.GetObject("close_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mascota {
             get {
                 object obj = ResourceManager.GetObject("mascota", resourceCulture);
@@ -76,6 +86,26 @@ namespace proyecto_mundial.Properties {
         internal static System.Drawing.Bitmap mascota1 {
             get {
                 object obj = ResourceManager.GetObject("mascota1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maxi_32 {
+            get {
+                object obj = ResourceManager.GetObject("maxi_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimize_32 {
+            get {
+                object obj = ResourceManager.GetObject("minimize_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

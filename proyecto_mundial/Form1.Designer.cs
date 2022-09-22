@@ -29,19 +29,28 @@
         private void InitializeComponent()
         {
             this.container = new System.Windows.Forms.Panel();
-            this.container_top = new System.Windows.Forms.Panel();
-            this.container_left = new System.Windows.Forms.Panel();
             this.container_center = new System.Windows.Forms.Panel();
-            this.panel_margin = new System.Windows.Forms.Panel();
-            this.add_team = new System.Windows.Forms.Button();
-            this.add_player = new System.Windows.Forms.Button();
-            this.add_couch = new System.Windows.Forms.Button();
+            this.container_left = new System.Windows.Forms.Panel();
             this.btn_game = new System.Windows.Forms.Button();
+            this.add_couch = new System.Windows.Forms.Button();
+            this.add_player = new System.Windows.Forms.Button();
+            this.add_team = new System.Windows.Forms.Button();
+            this.panel_margin = new System.Windows.Forms.Panel();
+            this.container_top = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.container.SuspendLayout();
             this.container_left.SuspendLayout();
             this.panel_margin.SuspendLayout();
+            this.container_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // container
@@ -55,14 +64,14 @@
             this.container.Size = new System.Drawing.Size(1005, 493);
             this.container.TabIndex = 0;
             // 
-            // container_top
+            // container_center
             // 
-            this.container_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(189)))), ((int)(((byte)(121)))));
-            this.container_top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.container_top.Location = new System.Drawing.Point(0, 0);
-            this.container_top.Name = "container_top";
-            this.container_top.Size = new System.Drawing.Size(1005, 26);
-            this.container_top.TabIndex = 0;
+            this.container_center.BackColor = System.Drawing.Color.Black;
+            this.container_center.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.container_center.Location = new System.Drawing.Point(213, 26);
+            this.container_center.Name = "container_center";
+            this.container_center.Size = new System.Drawing.Size(792, 467);
+            this.container_center.TabIndex = 2;
             // 
             // container_left
             // 
@@ -77,85 +86,6 @@
             this.container_left.Name = "container_left";
             this.container_left.Size = new System.Drawing.Size(213, 467);
             this.container_left.TabIndex = 1;
-            // 
-            // container_center
-            // 
-            this.container_center.BackColor = System.Drawing.Color.Black;
-            this.container_center.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.container_center.Location = new System.Drawing.Point(213, 26);
-            this.container_center.Name = "container_center";
-            this.container_center.Size = new System.Drawing.Size(792, 467);
-            this.container_center.TabIndex = 2;
-            // 
-            // panel_margin
-            // 
-            this.panel_margin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel_margin.Controls.Add(this.pictureBox1);
-            this.panel_margin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_margin.Location = new System.Drawing.Point(0, 0);
-            this.panel_margin.Name = "panel_margin";
-            this.panel_margin.Size = new System.Drawing.Size(213, 122);
-            this.panel_margin.TabIndex = 0;
-            // 
-            // add_team
-            // 
-            this.add_team.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(0)))), ((int)(((byte)(7)))));
-            this.add_team.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.add_team.Dock = System.Windows.Forms.DockStyle.Top;
-            this.add_team.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(0)))), ((int)(((byte)(7)))));
-            this.add_team.FlatAppearance.BorderSize = 0;
-            this.add_team.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(118)))), ((int)(((byte)(40)))));
-            this.add_team.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(189)))), ((int)(((byte)(121)))));
-            this.add_team.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.add_team.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_team.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.add_team.Location = new System.Drawing.Point(0, 122);
-            this.add_team.Name = "add_team";
-            this.add_team.Size = new System.Drawing.Size(213, 39);
-            this.add_team.TabIndex = 1;
-            this.add_team.Text = "Agregar Equipo";
-            this.add_team.UseVisualStyleBackColor = false;
-            this.add_team.Click += new System.EventHandler(this.add_team_Click);
-            // 
-            // add_player
-            // 
-            this.add_player.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(0)))), ((int)(((byte)(7)))));
-            this.add_player.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.add_player.Dock = System.Windows.Forms.DockStyle.Top;
-            this.add_player.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(0)))), ((int)(((byte)(7)))));
-            this.add_player.FlatAppearance.BorderSize = 0;
-            this.add_player.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(118)))), ((int)(((byte)(40)))));
-            this.add_player.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(189)))), ((int)(((byte)(121)))));
-            this.add_player.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.add_player.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_player.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.add_player.Location = new System.Drawing.Point(0, 161);
-            this.add_player.Name = "add_player";
-            this.add_player.Size = new System.Drawing.Size(213, 39);
-            this.add_player.TabIndex = 2;
-            this.add_player.Text = "Agregar Jugador";
-            this.add_player.UseVisualStyleBackColor = false;
-            this.add_player.Click += new System.EventHandler(this.add_player_Click);
-            // 
-            // add_couch
-            // 
-            this.add_couch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(0)))), ((int)(((byte)(7)))));
-            this.add_couch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.add_couch.Dock = System.Windows.Forms.DockStyle.Top;
-            this.add_couch.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(0)))), ((int)(((byte)(7)))));
-            this.add_couch.FlatAppearance.BorderSize = 0;
-            this.add_couch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(118)))), ((int)(((byte)(40)))));
-            this.add_couch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(189)))), ((int)(((byte)(121)))));
-            this.add_couch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.add_couch.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_couch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.add_couch.Location = new System.Drawing.Point(0, 200);
-            this.add_couch.Name = "add_couch";
-            this.add_couch.Size = new System.Drawing.Size(213, 39);
-            this.add_couch.TabIndex = 3;
-            this.add_couch.Text = "Agregar Entrenador";
-            this.add_couch.UseVisualStyleBackColor = false;
-            this.add_couch.Click += new System.EventHandler(this.add_couch_Click);
             // 
             // btn_game
             // 
@@ -177,6 +107,87 @@
             this.btn_game.UseVisualStyleBackColor = false;
             this.btn_game.Click += new System.EventHandler(this.btn_game_Click);
             // 
+            // add_couch
+            // 
+            this.add_couch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(0)))), ((int)(((byte)(7)))));
+            this.add_couch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.add_couch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.add_couch.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(0)))), ((int)(((byte)(7)))));
+            this.add_couch.FlatAppearance.BorderSize = 0;
+            this.add_couch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(118)))), ((int)(((byte)(40)))));
+            this.add_couch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(189)))), ((int)(((byte)(121)))));
+            this.add_couch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_couch.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_couch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.add_couch.Location = new System.Drawing.Point(0, 200);
+            this.add_couch.Name = "add_couch";
+            this.add_couch.Size = new System.Drawing.Size(213, 39);
+            this.add_couch.TabIndex = 3;
+            this.add_couch.Text = "Agregar Entrenador";
+            this.add_couch.UseVisualStyleBackColor = false;
+            this.add_couch.Click += new System.EventHandler(this.add_couch_Click);
+            // 
+            // add_player
+            // 
+            this.add_player.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(0)))), ((int)(((byte)(7)))));
+            this.add_player.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.add_player.Dock = System.Windows.Forms.DockStyle.Top;
+            this.add_player.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(0)))), ((int)(((byte)(7)))));
+            this.add_player.FlatAppearance.BorderSize = 0;
+            this.add_player.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(118)))), ((int)(((byte)(40)))));
+            this.add_player.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(189)))), ((int)(((byte)(121)))));
+            this.add_player.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_player.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_player.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.add_player.Location = new System.Drawing.Point(0, 161);
+            this.add_player.Name = "add_player";
+            this.add_player.Size = new System.Drawing.Size(213, 39);
+            this.add_player.TabIndex = 2;
+            this.add_player.Text = "Agregar Jugador";
+            this.add_player.UseVisualStyleBackColor = false;
+            this.add_player.Click += new System.EventHandler(this.add_player_Click);
+            // 
+            // add_team
+            // 
+            this.add_team.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(0)))), ((int)(((byte)(7)))));
+            this.add_team.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.add_team.Dock = System.Windows.Forms.DockStyle.Top;
+            this.add_team.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(0)))), ((int)(((byte)(7)))));
+            this.add_team.FlatAppearance.BorderSize = 0;
+            this.add_team.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(118)))), ((int)(((byte)(40)))));
+            this.add_team.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(189)))), ((int)(((byte)(121)))));
+            this.add_team.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_team.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_team.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.add_team.Location = new System.Drawing.Point(0, 122);
+            this.add_team.Name = "add_team";
+            this.add_team.Size = new System.Drawing.Size(213, 39);
+            this.add_team.TabIndex = 1;
+            this.add_team.Text = "Agregar Equipo";
+            this.add_team.UseVisualStyleBackColor = false;
+            this.add_team.Click += new System.EventHandler(this.add_team_Click);
+            // 
+            // panel_margin
+            // 
+            this.panel_margin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel_margin.Controls.Add(this.pictureBox1);
+            this.panel_margin.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_margin.Location = new System.Drawing.Point(0, 0);
+            this.panel_margin.Name = "panel_margin";
+            this.panel_margin.Size = new System.Drawing.Size(213, 122);
+            this.panel_margin.TabIndex = 0;
+            // 
+            // container_top
+            // 
+            this.container_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(189)))), ((int)(((byte)(121)))));
+            this.container_top.Controls.Add(this.panel1);
+            this.container_top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.container_top.Location = new System.Drawing.Point(0, 0);
+            this.container_top.Name = "container_top";
+            this.container_top.Size = new System.Drawing.Size(1005, 26);
+            this.container_top.TabIndex = 0;
+            this.container_top.MouseDown += new System.Windows.Forms.MouseEventHandler(this.container_top_MouseDown);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::proyecto_mundial.Properties.Resources.mascota1;
@@ -186,6 +197,53 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(805, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 26);
+            this.panel1.TabIndex = 0;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Image = global::proyecto_mundial.Properties.Resources.minimize_32;
+            this.pictureBox4.Location = new System.Drawing.Point(106, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(26, 20);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 5;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click_1);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::proyecto_mundial.Properties.Resources.maxi_32;
+            this.pictureBox3.Location = new System.Drawing.Point(138, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(26, 20);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click_1);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::proyecto_mundial.Properties.Resources.close_32;
+            this.pictureBox2.Location = new System.Drawing.Point(170, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(26, 20);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Form1
             // 
@@ -199,7 +257,12 @@
             this.container.ResumeLayout(false);
             this.container_left.ResumeLayout(false);
             this.panel_margin.ResumeLayout(false);
+            this.container_top.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -216,6 +279,10 @@
         private System.Windows.Forms.Button add_player;
         private System.Windows.Forms.Button btn_game;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
