@@ -100,6 +100,7 @@
             this.btn_agregar.TabIndex = 16;
             this.btn_agregar.Text = "Guardar";
             this.btn_agregar.UseVisualStyleBackColor = false;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
             // label1
             // 

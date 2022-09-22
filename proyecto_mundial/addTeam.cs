@@ -65,5 +65,12 @@ namespace proyecto_mundial
         {
 
         }
+
+        private void btn_agregar_Click(object sender, EventArgs e)
+        {
+            DatabaseController db = new DatabaseController();
+            var result = db.isConnected();
+            MessageBox.Show(result.ToString());
+        }
     }
 }
