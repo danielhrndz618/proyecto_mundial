@@ -79,6 +79,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TeamController.cs" />
+    <Compile Include="TeamModel.cs" />
     <EmbeddedResource Include="addCouch.resx">
       <DependentUpon>addCouch.cs</DependentUpon>
     </EmbeddedResource>
