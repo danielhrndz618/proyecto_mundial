@@ -15,5 +15,23 @@ namespace proyecto_mundial
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.ExecuteNonQuery();
         }
+
+
+        public List<TeamModel> getTeams(SqlConnection conn)
+        {
+            String query = "select * from dbo.Pais";
+            SqlCommand cursor = new SqlCommand(query, conn);
+            SqlDataReader reader = cursor.ExecuteReader();
+            List<TeamModel> arr_teams = new List<TeamModel>();
+            while (reader.Read())
+            {
+                int id = reader.GetInt32(0);
+                string name = reader.GetString(1);
+                int cant = reader.GetInt32(2);
+                TeamModel tm = new TeamModel(name, cant);
+                arr_teams.Add(tm);
+            }
+            return arr_teams;
+        }
     }
 }
