@@ -46,16 +46,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addCouch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addCouch.Designer.cs">
+      <DependentUpon>addCouch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addPlayer.Designer.cs">
+      <DependentUpon>addPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addTeam.Designer.cs">
+      <DependentUpon>addTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseController.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Partido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Partido.Designer.cs">
+      <DependentUpon>Partido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="addCouch.resx">
+      <DependentUpon>addCouch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addPlayer.resx">
+      <DependentUpon>addPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addTeam.resx">
+      <DependentUpon>addTeam.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Partido.resx">
+      <DependentUpon>Partido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,6 +102,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +116,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\mascota.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
