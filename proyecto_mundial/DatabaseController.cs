@@ -22,5 +22,15 @@ namespace proyecto_mundial
         {
             return this.connection != null;
         }
+
+        public void close()
+        {
+            this.connection.Close();
+        }
+
+        public SqlConnection getConnection()
+        {
+            return this.connection;
+        }
     }
 }
