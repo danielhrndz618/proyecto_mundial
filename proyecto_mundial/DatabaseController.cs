@@ -16,6 +16,7 @@ namespace proyecto_mundial
         {
             this.connectionString = "Data Source=localhost; Initial Catalog=mundial; User ID=sa; Password=daniela11";
             this.connection = new SqlConnection(connectionString);
+            this.connection.Open();
         }
 
         public bool isConnected()

@@ -18,5 +18,11 @@ namespace proyecto_mundial
             this.name = name;
             this.cant = cant;
         }
+
+        public TeamModel(string name, int cant)
+        {
+            this.name = name;
+            this.cant = cant;
+        }
     }
 }
