@@ -9,3 +9,7 @@ C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mund
 C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.csproj.CoreCompileInputs.cache
 C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.exe
 C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.pdb
+C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.addCouch.resources
+C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.addPlayer.resources
+C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.addTeam.resources
+C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.Partido.resources
