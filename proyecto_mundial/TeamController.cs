@@ -9,18 +9,27 @@ namespace proyecto_mundial
 {
     public class TeamController
     {
-        public void insertTeam(SqlConnection conn, TeamModel team)
+
+        public SqlConnection conn;
+        public TeamController()
         {
+            this.conn = DatabaseController.getConnection();
+        }
+        public void insertTeam(TeamModel team)
+        {
+            this.conn.Open();
             String query = "insert into dbo.Pais(nombre, cant_jugadores) values('" + team.name + "', '" + team.cant + "')";
-            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlCommand cmd = new SqlCommand(query, this.conn);
             cmd.ExecuteNonQuery();
+            this.conn.Close();
         }
 
 
-        public List<TeamModel> getTeams(SqlConnection conn)
+        public List<TeamModel> getTeams()
         {
+            this.conn.Open();
             String query = "select * from dbo.Pais";
-            SqlCommand cursor = new SqlCommand(query, conn);
+            SqlCommand cursor = new SqlCommand(query, this.conn);
             SqlDataReader reader = cursor.ExecuteReader();
             List<TeamModel> arr_teams = new List<TeamModel>();
             while (reader.Read())
@@ -31,6 +40,7 @@ namespace proyecto_mundial
                 TeamModel tm = new TeamModel(name, cant);
                 arr_teams.Add(tm);
             }
+            this.conn.Close();
             return arr_teams;
         }
     }

@@ -80,17 +80,25 @@ namespace proyecto_mundial
             pictureBox1.Image = null;
         }
 
+        public bool componentIsEmpty()
+        {
+            return txt_nombre.Text == "" && txt_cant.Text == "";
+        }
+
         private void btn_agregar_Click(object sender, EventArgs e)
         {
-            TeamModel team = new TeamModel(txt_nombre.Text, Convert.ToInt32(txt_cant.Text));
-            TeamController teamc = new TeamController();
-            DatabaseController db = new DatabaseController();
+            if (this.componentIsEmpty())
             {
-                teamc.insertTeam(db.getConnection(), team);
-                MessageBox.Show("Equipo insertado :D");
-                db.close();
-                this.clearComponents();
+                MessageBox.Show("Debe completar los campos");
+                return;
             }
+
+            TeamModel team = new TeamModel(txt_nombre.Text, Convert.ToInt32(txt_cant.Text));
+            DatabaseController db = new DatabaseController();
+            TeamController teamc = new TeamController();
+            teamc.insertTeam(team);
+            MessageBox.Show("Equipo insertado :D");
+            this.clearComponents();
         }
     }
 }
