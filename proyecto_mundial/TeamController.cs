@@ -37,7 +37,7 @@ namespace proyecto_mundial
                 int id = reader.GetInt32(0);
                 string name = reader.GetString(1);
                 int cant = reader.GetInt32(2);
-                TeamModel tm = new TeamModel(name, cant);
+                TeamModel tm = new TeamModel(id, name, cant);
                 arr_teams.Add(tm);
             }
             this.conn.Close();

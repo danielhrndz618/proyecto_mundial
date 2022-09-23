@@ -34,18 +34,45 @@ namespace proyecto_mundial
         {
             foreach(TeamModel team in this.teams)
             {
-                if(team.name.Equals(name)) return team.id;
+                Console.WriteLine(team.name+ " and " + name);
+                if (team.name.ToLower().Equals(name.ToLower()))
+                {
+                    Console.WriteLine("Es Esta!");
+                    return team.id;
+                }
             }
             return -1;
+        }
+
+        public bool isEmpty()
+        {
+            return txt_asistencias.Text == "" || txt_apellido.Text == "" || txt_gol.Text == "" || txt_minutos.Text == "" || txt_nombre.Text == "" || txt_posicion.Text == "";
+
+        }
+
+        public void clearComponents()
+        {
+            txt_apellido.Text = "";
+            txt_asistencias.Text = "";
+            txt_gol.Text = "";
+            txt_minutos.Text = "";
+            txt_nombre.Text = "";
+            txt_posicion.Text = "";
         }
 
 
         private void btn_agregar_Click(object sender, EventArgs e)
         {
+            if (this.isEmpty())
+            {
+                MessageBox.Show("Debe llenar todos los campos antes");
+                return;
+            }
 
             String name_pais = this.team_combo.GetItemText(this.team_combo.SelectedItem);
             int id_pais = this.getId(name_pais);
-            string date = date_picker.Value.ToShortDateString();
+            string date = date_picker.Value.ToString("yyyy/MM/dd");
+            Console.WriteLine(date);
 
             playerModel player = new playerModel(txt_nombre.Text
                 , txt_apellido.Text,
@@ -55,7 +82,15 @@ namespace proyecto_mundial
                 Convert.ToInt32(txt_minutos.Text),
                 id_pais,
                 Convert.ToInt32(txt_gol.Text));
+            PlayerController pc = new PlayerController();
+            pc.insertPlayer(player);
+            MessageBox.Show("Jugador Guardado :D");
+            this.clearComponents();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.clearComponents();
         }
     }
 }
