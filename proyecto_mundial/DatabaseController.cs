@@ -9,29 +9,12 @@ namespace proyecto_mundial
 {
     class DatabaseController
     {
-        public string connectionString;
-        public SqlConnection connection;
 
-        public DatabaseController()
+        static public SqlConnection getConnection()
         {
-            this.connectionString = "Data Source=localhost; Initial Catalog=mundial; User ID=sa; Password=daniela11";
-            this.connection = new SqlConnection(connectionString);
-            this.connection.Open();
-        }
-
-        public bool isConnected()
-        {
-            return this.connection != null;
-        }
-
-        public void close()
-        {
-            this.connection.Close();
-        }
-
-        public SqlConnection getConnection()
-        {
-            return this.connection;
+            String connectionString = "Data Source=localhost; Initial Catalog=mundial; User ID=sa; Password=daniela11";
+            SqlConnection connection = new SqlConnection(connectionString);
+            return connection;
         }
     }
 }

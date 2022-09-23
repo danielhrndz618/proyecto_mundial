@@ -77,6 +77,8 @@
     <Compile Include="Partido.Designer.cs">
       <DependentUpon>Partido.cs</DependentUpon>
     </Compile>
+    <Compile Include="PlayerController.cs" />
+    <Compile Include="playerModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TeamController.cs" />
@@ -121,6 +123,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="img\mascota.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\close_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\maxi_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\minimize_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
