@@ -45,10 +45,11 @@ namespace proyecto_mundial
 
             String name_pais = this.team_combo.GetItemText(this.team_combo.SelectedItem);
             int id_pais = this.getId(name_pais);
+            string date = date_picker.Value.ToShortDateString();
 
             playerModel player = new playerModel(txt_nombre.Text
                 , txt_apellido.Text,
-                date_picker.Text,
+                date,
                 txt_posicion.Text,
                 Convert.ToInt32(txt_asistencias.Text),
                 Convert.ToInt32(txt_minutos.Text),
