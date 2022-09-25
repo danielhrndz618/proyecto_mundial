@@ -14,20 +14,19 @@ namespace proyecto_mundial
             this.random_generator = new Random();
         }
 
-        int getRandPos(int size)
+        public int getRandPos(int size)
         {
             return random_generator.Next(0, size);
         }
 
 
-
-
-        List<TeamModel> getGameTeams(List<TeamModel> teams)
+        public List<TeamModel> getGameTeams(List<TeamModel> teams)
         {
             int x = this.getRandPos(teams.Count);
-            int y = this.getRandPos(teams.Count);
             List<TeamModel> game_teams = new List<TeamModel>();
             game_teams.Add(teams[x]);
+            teams.Remove(teams[x]);
+            int y = this.getRandPos(teams.Count);
             game_teams.Add(teams[y]);
             return game_teams;
         }
