@@ -9,3 +9,17 @@ C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mund
 C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Debug\proyecto_mundial.csproj.CoreCompileInputs.cache
 C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Debug\proyecto_mundial.exe
 C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Debug\proyecto_mundial.pdb
+C:\Users\Edgar Espinoza\Desktop\BD Proyecto\proyecto_mundial\proyecto_mundial\bin\Debug\proyecto_mundial.exe.config
+C:\Users\Edgar Espinoza\Desktop\BD Proyecto\proyecto_mundial\proyecto_mundial\bin\Debug\proyecto_mundial.exe
+C:\Users\Edgar Espinoza\Desktop\BD Proyecto\proyecto_mundial\proyecto_mundial\bin\Debug\proyecto_mundial.pdb
+C:\Users\Edgar Espinoza\Desktop\BD Proyecto\proyecto_mundial\proyecto_mundial\obj\Debug\proyecto_mundial.csproj.AssemblyReference.cache
+C:\Users\Edgar Espinoza\Desktop\BD Proyecto\proyecto_mundial\proyecto_mundial\obj\Debug\proyecto_mundial.addCouch.resources
+C:\Users\Edgar Espinoza\Desktop\BD Proyecto\proyecto_mundial\proyecto_mundial\obj\Debug\proyecto_mundial.addPlayer.resources
+C:\Users\Edgar Espinoza\Desktop\BD Proyecto\proyecto_mundial\proyecto_mundial\obj\Debug\proyecto_mundial.addTeam.resources
+C:\Users\Edgar Espinoza\Desktop\BD Proyecto\proyecto_mundial\proyecto_mundial\obj\Debug\proyecto_mundial.Form1.resources
+C:\Users\Edgar Espinoza\Desktop\BD Proyecto\proyecto_mundial\proyecto_mundial\obj\Debug\proyecto_mundial.Partido.resources
+C:\Users\Edgar Espinoza\Desktop\BD Proyecto\proyecto_mundial\proyecto_mundial\obj\Debug\proyecto_mundial.Properties.Resources.resources
+C:\Users\Edgar Espinoza\Desktop\BD Proyecto\proyecto_mundial\proyecto_mundial\obj\Debug\proyecto_mundial.csproj.GenerateResource.cache
+C:\Users\Edgar Espinoza\Desktop\BD Proyecto\proyecto_mundial\proyecto_mundial\obj\Debug\proyecto_mundial.csproj.CoreCompileInputs.cache
+C:\Users\Edgar Espinoza\Desktop\BD Proyecto\proyecto_mundial\proyecto_mundial\obj\Debug\proyecto_mundial.exe
+C:\Users\Edgar Espinoza\Desktop\BD Proyecto\proyecto_mundial\proyecto_mundial\obj\Debug\proyecto_mundial.pdb
