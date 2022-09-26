@@ -13,10 +13,17 @@ namespace proyecto_mundial
 {
     public partial class Partido : Form
     {
+        GameController controller;
         public Partido()
         {
             InitializeComponent();
+            controller = new GameController();
             this.fillData();
+        }
+
+        public void createGame(TeamModel t1, TeamModel t2)
+        {
+            controller.insertGame(new GameModel(t1.id, t2.id, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2));
         }
 
         public void fillData()
@@ -24,11 +31,22 @@ namespace proyecto_mundial
             TeamController tc = new TeamController();
             var teams = tc.getTeams();
             HelperGame hg = new HelperGame();
-            List<TeamModel> game_teams = hg.getGameTeams(teams);
+            List<TeamModel> game_teams = hg.getFilteredTeams(teams);
+            if(game_teams.Count == 2)
+            {
+                MessageBox.Show("Estsamos jugando las finales");
+            }
+            if(game_teams.Count < 2)
+            {
+                MessageBox.Show("El ganador es: ", game_teams[0].name);
+                return;
+            }
+            game_teams = hg.getGameTeams(teams);
             team_1.Text = game_teams[0].name;
             team_2.Text = game_teams[1].name;
             this.ponerImagen(img_1, team_1.Text.ToLower());
             this.ponerImagen(img_2, team_2.Text.ToLower());
+            this.createGame(game_teams[0], game_teams[1]);
         }
         public bool fileExist(string path, string filename)
         {
