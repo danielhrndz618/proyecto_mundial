@@ -42,5 +42,23 @@ namespace proyecto_mundial
             this.id_pais = id_pais;
             this.gol = gol;
         }
+
+        public playerModel(int id, int g, int a, String pos, int min)
+        {
+            this.id = id;
+            this.gol = g;
+            this.assist = a;
+            this.position = pos;
+            this.minutos = min;
+        }
+
+        public playerModel(String nombre, int gol, int minutos, int assist, int id_pais)
+        {
+            this.name = nombre;
+            this.assist = assist;
+            this.minutos = minutos;
+            this.id_pais = id_pais;
+            this.gol = gol;
+        }
     }
 }

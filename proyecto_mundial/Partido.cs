@@ -27,6 +27,9 @@ namespace proyecto_mundial
             int y = hg.getRandomGoal();
             lbl_g.Text = x.ToString();
             lbl_g2.Text = y.ToString();
+            PlayerController pc = new PlayerController();
+            pc.setGoals(x, t1.id);
+            pc.setGoals(y, t2.id);
             controller.insertGame(new GameModel(t1.id, t2.id, x, y, 2, 2, 2, 2, 2, 2, 2, 2, 2));
         }
 

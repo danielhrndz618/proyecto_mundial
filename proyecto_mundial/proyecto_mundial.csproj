@@ -67,6 +67,12 @@
     <Compile Include="CouchController.cs" />
     <Compile Include="CouchModel.cs" />
     <Compile Include="DatabaseController.cs" />
+    <Compile Include="EstJugador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstJugador.Designer.cs">
+      <DependentUpon>EstJugador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="addTeam.resx">
       <DependentUpon>addTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstJugador.resx">
+      <DependentUpon>EstJugador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

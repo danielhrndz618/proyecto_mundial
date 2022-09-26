@@ -13,3 +13,4 @@ C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mund
 C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.addPlayer.resources
 C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.addTeam.resources
 C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.Partido.resources
+C:\Users\olste\OneDrive\Escritorio\Development\C#\proyecto_mundial\proyecto_mundial\obj\Release\proyecto_mundial.EstJugador.resources
