@@ -93,7 +93,7 @@ namespace proyecto_mundial
                 return;
             }
 
-            TeamModel team = new TeamModel(txt_nombre.Text, Convert.ToInt32(txt_cant.Text));
+            TeamModel team = new TeamModel(txt_nombre.Text.ToLower(), Convert.ToInt32(txt_cant.Text));
             DatabaseController db = new DatabaseController();
             TeamController teamc = new TeamController();
             teamc.insertTeam(team);
