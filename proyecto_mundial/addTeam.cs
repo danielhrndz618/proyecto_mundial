@@ -52,7 +52,7 @@ namespace proyecto_mundial
             if(pais == "")
             {
                 pictureBox1.Image.Dispose();
-                pictureBox1.Image = null;
+                //pictureBox1.Image = null;
                 return;
             }
             if (fileExist("./Banderas", pais + ".png"))
@@ -64,7 +64,10 @@ namespace proyecto_mundial
 
         private void txt_nombre_TextChanged(object sender, EventArgs e)
         {
-            this.ponerImagen(txt_nombre.Text.ToLower());
+            if(txt_nombre.Text.Length > 2)
+            {
+                this.ponerImagen(txt_nombre.Text.ToLower());
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -93,11 +96,11 @@ namespace proyecto_mundial
                 return;
             }
 
-            TeamModel team = new TeamModel(txt_nombre.Text.ToLower(), Convert.ToInt32(txt_cant.Text));
+            TeamModel team = new TeamModel(txt_nombre.Text.ToLower(),23);
             DatabaseController db = new DatabaseController();
             TeamController teamc = new TeamController();
             teamc.insertTeam(team);
-            MessageBox.Show("Equipo insertado :D");
+            //MessageBox.Show("Equipo insertado :D");
             this.clearComponents();
         }
     }

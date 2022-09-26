@@ -31,13 +31,14 @@
             this.container = new System.Windows.Forms.Panel();
             this.container_center = new System.Windows.Forms.Panel();
             this.container_left = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_game = new System.Windows.Forms.Button();
             this.add_couch = new System.Windows.Forms.Button();
             this.add_player = new System.Windows.Forms.Button();
             this.add_team = new System.Windows.Forms.Button();
             this.panel_margin = new System.Windows.Forms.Panel();
-            this.container_top = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.container_top = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -45,8 +46,8 @@
             this.container.SuspendLayout();
             this.container_left.SuspendLayout();
             this.panel_margin.SuspendLayout();
-            this.container_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.container_top.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -76,6 +77,7 @@
             // container_left
             // 
             this.container_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(0)))), ((int)(((byte)(7)))));
+            this.container_left.Controls.Add(this.button1);
             this.container_left.Controls.Add(this.btn_game);
             this.container_left.Controls.Add(this.add_couch);
             this.container_left.Controls.Add(this.add_player);
@@ -86,6 +88,26 @@
             this.container_left.Name = "container_left";
             this.container_left.Size = new System.Drawing.Size(213, 467);
             this.container_left.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(0)))), ((int)(((byte)(7)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(0)))), ((int)(((byte)(7)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(118)))), ((int)(((byte)(40)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(189)))), ((int)(((byte)(121)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(0, 278);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(213, 39);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Estadisticas Jugadores";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_game
             // 
@@ -177,6 +199,16 @@
             this.panel_margin.Size = new System.Drawing.Size(213, 122);
             this.panel_margin.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::proyecto_mundial.Properties.Resources.mascota1;
+            this.pictureBox1.Location = new System.Drawing.Point(26, -14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(150, 130);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // container_top
             // 
             this.container_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(189)))), ((int)(((byte)(121)))));
@@ -187,16 +219,6 @@
             this.container_top.Size = new System.Drawing.Size(1005, 26);
             this.container_top.TabIndex = 0;
             this.container_top.MouseDown += new System.Windows.Forms.MouseEventHandler(this.container_top_MouseDown);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::proyecto_mundial.Properties.Resources.mascota1;
-            this.pictureBox1.Location = new System.Drawing.Point(26, -14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 130);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -257,8 +279,8 @@
             this.container.ResumeLayout(false);
             this.container_left.ResumeLayout(false);
             this.panel_margin.ResumeLayout(false);
-            this.container_top.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.container_top.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -283,6 +305,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
