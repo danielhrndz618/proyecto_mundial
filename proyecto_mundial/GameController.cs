@@ -48,7 +48,9 @@ namespace proyecto_mundial
                 int id = reader.GetInt32(0);
                 int id_l = reader.GetInt32(1);
                 int id_v = reader.GetInt32(2);
-                GameModel tm = new GameModel(id, id_l, id_v);
+                int g_l = reader.GetInt32(3);
+                int g_v = reader.GetInt32(4);
+                GameModel tm = new GameModel(id, id_l, id_v, g_v, g_l);
                 arr_games.Add(tm);
             }
             this.conn.Close();
