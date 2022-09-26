@@ -32,6 +32,37 @@ namespace proyecto_mundial
         }
 
 
+        public List<TeamModel> removeById(int id, List<TeamModel> teams)
+        {
+            foreach(TeamModel team in teams)
+            {
+                if(team.id == id)
+                {
+                    teams.Remove(team);
+                }
+            }
+            return teams;
+        }
+
+        public List<TeamModel> getFilteredTeams(List<TeamModel> teams)
+        {
+            GameController gc = new GameController();
+            List<GameModel> arr = gc.getGames();
+            int pos = 0;
+            foreach(GameModel game in arr)
+            {
+                teams = removeById(game.id_vis, teams);
+                teams = removeById(game.id_local, teams);
+            }
+            return teams;
+        }
+
+
+
+        
+
+
+
 
 
 
