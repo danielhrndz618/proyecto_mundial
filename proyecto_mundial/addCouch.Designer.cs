@@ -32,15 +32,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.date_picker = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_agregar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_time = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cmb_country = new System.Windows.Forms.ComboBox();
+            this.txt_age = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -56,10 +54,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(37, 142);
+            this.label3.Font = new System.Drawing.Font("Qatar2022 Arabic Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(37, 135);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 16);
+            this.label3.Size = new System.Drawing.Size(68, 22);
             this.label3.TabIndex = 23;
             this.label3.Text = "Apellido";
             // 
@@ -75,30 +73,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Qatar2022 Arabic Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(37, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 16);
+            this.label2.Size = new System.Drawing.Size(69, 22);
             this.label2.TabIndex = 21;
             this.label2.Text = "Nombre";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(40, 280);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(155, 16);
-            this.label7.TabIndex = 34;
-            this.label7.Text = "Fecha de Nacimiento";
-            // 
-            // date_picker
-            // 
-            this.date_picker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date_picker.Location = new System.Drawing.Point(44, 303);
-            this.date_picker.Name = "date_picker";
-            this.date_picker.Size = new System.Drawing.Size(200, 22);
-            this.date_picker.TabIndex = 33;
             // 
             // button1
             // 
@@ -112,6 +92,7 @@
             this.button1.TabIndex = 38;
             this.button1.Text = "Limpiar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_agregar
             // 
@@ -125,81 +106,80 @@
             this.btn_agregar.TabIndex = 37;
             this.btn_agregar.Text = "Guardar";
             this.btn_agregar.UseVisualStyleBackColor = false;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
-            // textBox1
+            // txt_time
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(312, 88);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 28);
-            this.textBox1.TabIndex = 40;
+            this.txt_time.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_time.Location = new System.Drawing.Point(312, 89);
+            this.txt_time.Multiline = true;
+            this.txt_time.Name = "txt_time";
+            this.txt_time.Size = new System.Drawing.Size(184, 28);
+            this.txt_time.TabIndex = 40;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(309, 70);
+            this.label1.Font = new System.Drawing.Font("Qatar2022 Arabic Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(309, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 16);
+            this.label1.Size = new System.Drawing.Size(142, 22);
             this.label1.TabIndex = 39;
-            this.label1.Text = "Debut como entrenador";
+            this.label1.Text = "Tiempo de trabajo";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(312, 144);
+            this.label4.Font = new System.Drawing.Font("Qatar2022 Arabic Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(312, 139);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 16);
+            this.label4.Size = new System.Drawing.Size(40, 22);
             this.label4.TabIndex = 42;
             this.label4.Text = "Pais";
             // 
-            // comboBox1
+            // cmb_country
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.comboBox1.Location = new System.Drawing.Point(312, 160);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 24);
-            this.comboBox1.TabIndex = 41;
+            this.cmb_country.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_country.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_country.FormattingEnabled = true;
+            this.cmb_country.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.cmb_country.Location = new System.Drawing.Point(312, 161);
+            this.cmb_country.Name = "cmb_country";
+            this.cmb_country.Size = new System.Drawing.Size(200, 24);
+            this.cmb_country.TabIndex = 41;
             // 
-            // textBox2
+            // txt_age
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(40, 232);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(184, 28);
-            this.textBox2.TabIndex = 44;
+            this.txt_age.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_age.Location = new System.Drawing.Point(40, 232);
+            this.txt_age.Multiline = true;
+            this.txt_age.Name = "txt_age";
+            this.txt_age.Size = new System.Drawing.Size(184, 28);
+            this.txt_age.TabIndex = 44;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Qatar2022 Arabic Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(37, 214);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 16);
+            this.label5.Size = new System.Drawing.Size(46, 22);
             this.label5.TabIndex = 43;
-            this.label5.Text = "Nacionalidad";
+            this.label5.Text = "Edad";
             // 
             // addCouch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(792, 467);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt_age);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cmb_country);
+            this.Controls.Add(this.txt_time);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_agregar);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.date_picker);
             this.Controls.Add(this.txt_apellido);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_nombre);
@@ -218,15 +198,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker date_picker;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_agregar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_time;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox cmb_country;
+        private System.Windows.Forms.TextBox txt_age;
         private System.Windows.Forms.Label label5;
     }
 }
