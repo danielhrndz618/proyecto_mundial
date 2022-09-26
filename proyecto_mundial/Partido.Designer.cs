@@ -33,8 +33,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.img_1 = new System.Windows.Forms.PictureBox();
             this.img_2 = new System.Windows.Forms.PictureBox();
+            this.lbl_g = new System.Windows.Forms.Label();
+            this.lbl_g2 = new System.Windows.Forms.Label();
+            this.lbl_title = new System.Windows.Forms.Label();
+            this.pic_winner = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.img_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_winner)).BeginInit();
             this.SuspendLayout();
             // 
             // team_1
@@ -85,11 +90,56 @@
             this.img_2.TabIndex = 4;
             this.img_2.TabStop = false;
             // 
+            // lbl_g
+            // 
+            this.lbl_g.AutoSize = true;
+            this.lbl_g.Font = new System.Drawing.Font("Qatar2022 Arabic Bold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_g.Location = new System.Drawing.Point(205, 389);
+            this.lbl_g.Name = "lbl_g";
+            this.lbl_g.Size = new System.Drawing.Size(42, 18);
+            this.lbl_g.TabIndex = 5;
+            this.lbl_g.Text = "label2";
+            // 
+            // lbl_g2
+            // 
+            this.lbl_g2.AutoSize = true;
+            this.lbl_g2.Font = new System.Drawing.Font("Qatar2022 Arabic Bold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_g2.Location = new System.Drawing.Point(584, 389);
+            this.lbl_g2.Name = "lbl_g2";
+            this.lbl_g2.Size = new System.Drawing.Size(42, 18);
+            this.lbl_g2.TabIndex = 6;
+            this.lbl_g2.Text = "label2";
+            // 
+            // lbl_title
+            // 
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.Font = new System.Drawing.Font("Qatar2022 Arabic Bold", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.Location = new System.Drawing.Point(305, 48);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(227, 72);
+            this.lbl_title.TabIndex = 7;
+            this.lbl_title.Text = "Ganador";
+            this.lbl_title.Visible = false;
+            // 
+            // pic_winner
+            // 
+            this.pic_winner.Location = new System.Drawing.Point(291, 121);
+            this.pic_winner.Name = "pic_winner";
+            this.pic_winner.Size = new System.Drawing.Size(241, 253);
+            this.pic_winner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_winner.TabIndex = 8;
+            this.pic_winner.TabStop = false;
+            this.pic_winner.Visible = false;
+            // 
             // Partido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(776, 428);
+            this.Controls.Add(this.pic_winner);
+            this.Controls.Add(this.lbl_title);
+            this.Controls.Add(this.lbl_g2);
+            this.Controls.Add(this.lbl_g);
             this.Controls.Add(this.img_2);
             this.Controls.Add(this.img_1);
             this.Controls.Add(this.label1);
@@ -100,6 +150,7 @@
             this.Text = "Partido";
             ((System.ComponentModel.ISupportInitialize)(this.img_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_winner)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,5 +163,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox img_1;
         private System.Windows.Forms.PictureBox img_2;
+        private System.Windows.Forms.Label lbl_g;
+        private System.Windows.Forms.Label lbl_g2;
+        private System.Windows.Forms.Label lbl_title;
+        private System.Windows.Forms.PictureBox pic_winner;
     }
 }

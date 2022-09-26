@@ -14,6 +14,11 @@ namespace proyecto_mundial
             this.random_generator = new Random();
         }
 
+        public int getRandomGoal()
+        {
+            return random_generator.Next(0, 5);
+        }
+
         public int getRandPos(int size)
         {
             return random_generator.Next(0, size);
@@ -34,13 +39,16 @@ namespace proyecto_mundial
 
         public List<TeamModel> removeById(int id, List<TeamModel> teams)
         {
+            int pos = 0;
             foreach(TeamModel team in teams)
             {
                 if(team.id == id)
                 {
-                    teams.Remove(team);
+                    break;
                 }
+                pos++;
             }
+            teams.RemoveAt(pos);
             return teams;
         }
 
@@ -48,13 +56,21 @@ namespace proyecto_mundial
         {
             GameController gc = new GameController();
             List<GameModel> arr = gc.getGames();
-            int pos = 0;
+            List<TeamModel> arr_c = teams; 
             foreach(GameModel game in arr)
             {
-                teams = removeById(game.id_vis, teams);
-                teams = removeById(game.id_local, teams);
+                Console.WriteLine("Local: " + game.local_goals);
+                Console.WriteLine("Visitante: " + game.vis_goals);
+                if(game.local_goals > game.vis_goals)
+                {
+                    arr_c = removeById(game.id_vis, teams);
+                }
+                if(game.vis_goals > game.local_goals)
+                {
+                    arr_c = removeById(game.id_local, teams);
+                }
             }
-            return teams;
+            return arr_c;
         }
 
 

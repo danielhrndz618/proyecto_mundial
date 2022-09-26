@@ -27,7 +27,7 @@ namespace proyecto_mundial
             this.red_cards_l = red_cards_l;
         }
 
-        public GameModel(int id_local, int id_vis, int vis_goals, int local_goals, int vis_shots, int local_shots, int local_desv_shots, int vis_desv_shots, int yellow_cards_l, int yellow_cards_v, int red_cards_v, int red_cards_l)
+        public GameModel(int id_local, int id_vis, int local_goals, int vis_goals, int vis_shots, int local_shots, int local_desv_shots, int vis_desv_shots, int yellow_cards_l, int yellow_cards_v, int red_cards_v, int red_cards_l)
         {
             this.id_local = id_local;
             this.id_vis = id_vis;
@@ -43,11 +43,13 @@ namespace proyecto_mundial
             this.red_cards_l = red_cards_l;
         }
 
-        public GameModel(int id, int id_l,int id_v)
+        public GameModel(int id, int id_l,int id_v, int g_v, int g_l)
         {
             this.id = id;
             this.id_vis = id_v;
             this.id_local = id_l;
+            this.local_goals = g_l;
+            this.vis_goals = g_v;
         }
 
 
