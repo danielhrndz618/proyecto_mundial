@@ -17,8 +17,8 @@ namespace proyecto_mundial
         public void insertPlayer(playerModel player)
         {
             this.conn.Open();
-            String query = "insert into dbo.Jugador(nombre, apellido, fecha_nacimiento, posicion, goles, asistencias, minutos, id_pais) ";
-            query += "values('"+player.name+"', '"+player.surname+"','"+DateTime.Parse(player.date)+"', '"+player.position+"'";
+            String query = "insert into dbo.Jugador(nombre, apellido, edad, posicion, goles, asistencias, minutos, id_pais) ";
+            query += "values('"+player.name+"', '"+player.surname+"','"+player.edad+"', '"+player.position+"'";
             query += ", '" + player.gol + "', '" + player.assist + "', '" + player.minutos + "', '" + player.id_pais + "');";
             SqlCommand cmd = new SqlCommand(query, this.conn);
             cmd.ExecuteNonQuery();

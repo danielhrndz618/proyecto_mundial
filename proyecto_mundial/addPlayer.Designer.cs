@@ -41,11 +41,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txt_minutos = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.date_picker = new System.Windows.Forms.DateTimePicker();
             this.team_combo = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.txt_age = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn_agregar
@@ -77,7 +77,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(42, 173);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 16);
+            this.label3.Size = new System.Drawing.Size(65, 16);
             this.label3.TabIndex = 19;
             this.label3.Text = "Apellido";
             // 
@@ -96,7 +96,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(42, 97);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 16);
+            this.label2.Size = new System.Drawing.Size(62, 16);
             this.label2.TabIndex = 17;
             this.label2.Text = "Nombre";
             // 
@@ -115,7 +115,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(42, 247);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 16);
+            this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 22;
             this.label1.Text = "Posicion";
             // 
@@ -134,7 +134,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(296, 97);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 16);
+            this.label4.Size = new System.Drawing.Size(48, 16);
             this.label4.TabIndex = 24;
             this.label4.Text = "Goles";
             // 
@@ -153,7 +153,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(295, 173);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 16);
+            this.label5.Size = new System.Drawing.Size(87, 16);
             this.label5.TabIndex = 26;
             this.label5.Text = "Asistencias";
             // 
@@ -172,17 +172,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(294, 247);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 16);
+            this.label6.Size = new System.Drawing.Size(60, 16);
             this.label6.TabIndex = 28;
             this.label6.Text = "Minutos";
-            // 
-            // date_picker
-            // 
-            this.date_picker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date_picker.Location = new System.Drawing.Point(538, 116);
-            this.date_picker.Name = "date_picker";
-            this.date_picker.Size = new System.Drawing.Size(200, 22);
-            this.date_picker.TabIndex = 30;
             // 
             // team_combo
             // 
@@ -201,9 +193,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(534, 93);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(155, 16);
+            this.label7.Size = new System.Drawing.Size(44, 16);
             this.label7.TabIndex = 32;
-            this.label7.Text = "Fecha de Nacimiento";
+            this.label7.Text = "Edad";
             // 
             // label8
             // 
@@ -211,7 +203,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(534, 168);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(39, 16);
+            this.label8.Size = new System.Drawing.Size(38, 16);
             this.label8.TabIndex = 33;
             this.label8.Text = "Pais";
             // 
@@ -229,16 +221,25 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // txt_age
+            // 
+            this.txt_age.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_age.Location = new System.Drawing.Point(537, 115);
+            this.txt_age.Multiline = true;
+            this.txt_age.Name = "txt_age";
+            this.txt_age.Size = new System.Drawing.Size(184, 28);
+            this.txt_age.TabIndex = 35;
+            // 
             // addPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(792, 467);
+            this.Controls.Add(this.txt_age);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.team_combo);
-            this.Controls.Add(this.date_picker);
             this.Controls.Add(this.txt_minutos);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_asistencias);
@@ -275,10 +276,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_minutos;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker date_picker;
         private System.Windows.Forms.ComboBox team_combo;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txt_age;
     }
 }
